@@ -12,11 +12,11 @@ function populateForm() {
   //TODO: Add an <option> tag inside the form's select for each product
   var selectElement = document.getElementById('items');
   for (var i in Product.allProducts) {
-      var optionElement = document.createElement('option');
-      var productName = document.createTextNode(Product.allProducts[i].name);
+    var optionElement = document.createElement('option');
+    var productName = document.createTextNode(Product.allProducts[i].name);
 
-      optionElement.appendChild(productName);
-      selectElement.appendChild(optionElement);
+    optionElement.appendChild(productName);
+    selectElement.appendChild(optionElement);
   }
 }
 
@@ -26,6 +26,7 @@ function populateForm() {
 function handleSubmit(event) {
 
   // TODO: Prevent the page from reloading
+  event.preventDefault();
 
   // Do all the things ...
   addSelectedItemToCart();
