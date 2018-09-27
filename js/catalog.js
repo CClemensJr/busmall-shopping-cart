@@ -56,8 +56,11 @@ function addSelectedItemToCart() {
   var selectedItem = selected.value;
   console.log(selectedItem);
 
-
   // TODO: get the quantity
+  var qty = document.getElementById('quantity');
+  var itemQty = qty.value;
+  console.log(itemQty);
+  
   // TODO: using those, add one item to the Cart
 }
 
