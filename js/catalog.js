@@ -52,17 +52,9 @@ function handleSubmit(event) {
 function addSelectedItemToCart() {
   console.log('In addSelectedItemToCart()');
   // TODO: suss out the item picked from the select list
-  // var option = document.getElementsByTagName('option');
-   var itemTextContent = event.target.textContent;
-   var itemInnerHtml = event.target.innerHtml;
-
-
-    //console.log(event.target.document.getElementById('items').getAttribute('value'));
-    // console.log("event.target: " + event.target);
-    // console.log("event.target.name: " + event.target.name);
-    console.log("event.target.value: " + event.target.value);
-    // console.log(event.target.textContent);
-
+  var selected = document.getElementById('items');
+  var selectedItem = selected.value;
+  console.log(selectedItem);
 
 
   // TODO: get the quantity
