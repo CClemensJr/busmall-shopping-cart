@@ -7,6 +7,7 @@ table.addEventListener('click', removeItemFromCart);
 var cart;
 
 function loadCart() {
+  console.log('In loadCart');
   var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
   cart = new Cart(cartItems);
 }
